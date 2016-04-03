@@ -132,7 +132,7 @@ public class SearchResults
 	void fetchResult(Vector<Integer> searchList) throws SQLException, ClassNotFoundException
 	{
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3306/project";
+		String url = "jdbc:mysql://localhost:3306/whizsearch";
 		String pwd = "abcde";
 		String name = "dbuser";
 		Connection conn = (Connection) DriverManager.getConnection(url, name, pwd);

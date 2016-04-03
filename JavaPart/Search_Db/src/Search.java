@@ -21,11 +21,11 @@ public class Search {
 	{
 
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3306/project";
+		String url = "jdbc:mysql://localhost:3306/whizsearch";
 		conn = DriverManager.getConnection(url, name, pwd);
 		//stmt = (Statement) conn.createStatement();
 		//rs = stmt.executeQuery("select * from note where subid=1");
-		String queryString = "select * from note where subid=1";
+		String queryString = "select * from notes";
 		stmt = conn.prepareStatement(queryString);
         rs = stmt.executeQuery();
 	}
@@ -43,7 +43,7 @@ public class Search {
 		int threadCnt=0;
 		while(rs.next())
 		{
-			String line =(String)rs.getString(3);
+			String line =(String)rs.getString(2);
 			String [] s = line.split(" ");
 			for (int i = 0; i < s.length; i++) 
 			{
