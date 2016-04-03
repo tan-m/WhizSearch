@@ -1,0 +1,11 @@
+import java.util.Vector;
+
+
+public class MusciallyTransposedInput {
+	
+	MusciallyTransposedInput(  Vector<Integer>q )
+	{
+		
+	}
+
+}

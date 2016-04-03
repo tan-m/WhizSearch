@@ -1,0 +1,19 @@
+import java.util.Vector;
+
+
+public class MusciallyTransposedInput {
+	
+	Vector<Integer> q = new Vector<Integer>();
+	Vector<Vector<Integer>> transposedInput = new Vector<Vector<Integer>>();
+	
+	MusciallyTransposedInput(  Vector<Integer>q, Vector<Vector<Integer>> transposedInput ){
+		this.q = q;
+		this.transposedInput = transposedInput;
+	}
+	
+	void transpose(){
+		 
+		
+	}
+
+}
